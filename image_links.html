@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images in HTML</title>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px; /* Adjust gap size as needed */
+    }
+    .gallery-grid img {
+      width: 100%; /* Images take full width of their grid cell */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Different Types of Images</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#menu">Menu</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Technology</h2>
+      <p>Here is an example of an image related to technology.</p>
+      <figure>
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--1aVkDcPx--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/a2w3y0ttoysnodawoo2e.png" alt="Technology image" width="300" height="200">
+        <figcaption>The Data Science Pack</figcaption>
+      </figure>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <ul class="gallery-grid">
+        <li>
+          <a href="https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.placeholder?view=netframework-4.8.1">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg" alt="Nature image 1" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="https://startselect.com/be-fr/placeholder2/69139">
+            <img src="https://as2.ftcdn.net/v2/jpg/06/15/52/47/1000_F_615524747_kr0OuBhFpVHgK0nTryraALXa8aL9XBH5.jpg" alt="Nature image 2" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders">
+            <img src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2023/04/NaturePositive.jpg?w=1024&h=576" alt="Nature image 3" width="200" height="200">
+          </a>
+        </li>
+        </ul>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders">Vegetables</a>
+          <img src="https://assets-global.website-files.com/63ed08484c069d0492f5b0bc/642c5de2f6aa2bd4c9abbe86_6406876a4676d1734a14a9a3_Bowl-of-vegetables-and-fruits-for-a-vegetarian-diet-vegetarian-weight-loss-plan.jpeg" alt="Healthy vegetables" width="100" height="100">
+        </li>
+        <li>
+          <a href="http://www.lorem5.com/">Lunch</a>
+          <img src="https://img.freepik.com/free-photo/side-view-fried-meat-with-french-fries-ketchup_141793-4908.jpg?w=740&t=st=1709987421~exp=1709988021~hmac=8f856618bc4d9405203cf8e13158431de5e0dd287dcc732fd7518d6bfad7275a" alt="Lunch food" width="100" height="100">
+        </li>
+        <li>
+          <a href="https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders">Breakfast</a>
+          <img src="https://i.insider.com/63b598ad1c748000180673c7?width=1000&format=jpeg&auto=webp" alt="Breakfast options" width="100" height="100">
+        </li>
+        </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
